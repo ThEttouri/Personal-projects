@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <h4></h4>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                <button type="submit" id="1">6 people per 1 sheep</button>
+                <button type="submit" id="2">3 people per 1 sheep</button>
+                <button type="submit" id="3">1 people per 1 sheep</button>
+                <button type="submit" id="4">1 people per 3 sheep</button>
+                <button type="submit" id="5">1 people per 6 sheep</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <h4></h4>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <form>
+                    <input autocomplete="off" autofocus id="check" type="text">
+                    <button type="submit" id="6">Check Answer</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function () {
+                let buttons = document.querySelectorAll('button');
+
+                buttons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        let answerId = this.id;
+
+                        if (answerId === '5') {
+                            this.style.backgroundColor = 'green';
+                            this.style.color = 'white';
+                            this.disabled = true;
+
+                            let statusElement = this.parentElement.querySelector('h4');
+                            statusElement.innerHTML = 'Correct';
+                            statusElement.style.color = 'green';
+                        } else if (answerId < 6) {
+                            this.style.backgroundColor = 'red';
+                            this.style.color = 'white';
+                            this.disabled = true;
+
+                            let statusElement = this.parentElement.querySelector('h4');
+                            statusElement.innerHTML = 'Incorrect';
+                            statusElement.style.color = 'red';
+                        }
+                    });
+                });
+
+                let freeResponseForm = document.querySelector('form');
+                freeResponseForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    let answer = document.querySelector('#check');
+                    let userAnswer = answer.value.toLowerCase();
+                    let statusElement = this.parentElement.querySelector('h4');
+
+                    if (userAnswer === 'switzerland') {
+                        answer.style.backgroundColor = 'green';
+                        answer.style.color = 'white';
+
+                        statusElement.innerHTML = 'Correct';
+                        statusElement.style.color = 'green';
+                    } else {
+                        answer.style.backgroundColor = 'red';
+                        answer.style.color = 'white';
+
+                        let statusElement = this.parentElement.querySelector('h4');
+                            statusElement.innerHTML = 'Incorrect';
+                            statusElement.style.color = 'red';
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>
