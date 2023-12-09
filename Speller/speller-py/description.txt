@@ -1,0 +1,45 @@
+=== Spell-Checker Implementation (Python) ===
+
+This Python implementation consists of two files: `speller.py` and `dictionary.py`, along with a file structure containing dictionaries and text files. Below is an overview of the key components:
+
+#### `dictionary.py`
+- **Functionality:**
+  - `check(word)`: Checks if a given word is in the loaded dictionary (case-insensitive).
+  - `load(dictionary)`: Loads a specified dictionary file into memory.
+  - `size()`: Returns the size of the loaded dictionary.
+  - `unload()`: Unloads the dictionary from memory.
+
+- **Implementation:**
+  - The script maintains a set called `words` to store dictionary words.
+  - Words are loaded from a specified dictionary file into the set.
+  - The size of the loaded dictionary is tracked.
+
+#### `speller.py`
+- **Functionality:**
+  - Loads a dictionary, spell-checks a given text file, and reports misspelled words.
+  - Measures the time taken for loading, spell-checking, determining dictionary size, and unloading.
+
+- **Usage:**
+  - Execute the script using the command: `python speller.py [dictionary] text`.
+
+- **File Structure:**
+  - Three folders containing dictionaries, keys, and texts.
+
+- **Spell-Checking Logic:**
+  - Reads characters from a text file, identifying words for spell-checking.
+  - Checks each word against the loaded dictionary.
+  - Reports misspelled words and calculates various benchmarks.
+
+- **Performance Metrics:**
+  - Reports the number of misspelled words, words in the dictionary, words in the text, and time benchmarks for each operation.
+
+- **Clean and Readable Code:**
+  - The code is well-organized, with meaningful variable names and comments.
+
+#### **Instructions for Reviewers:**
+- Review the `dictionary.py` file to understand the implementation of dictionary-related functions.
+- Explore the `speller.py` file to understand the overall spell-checking process and benchmarking.
+- Examine the file structure to identify the organization of dictionaries, keys, and text files.
+- Evaluate the script's overall readability, structure, and adherence to good coding practices.
+
+Thank you for reviewing this Python spell-checker implementation. If you have any questions, please feel free to ask.
