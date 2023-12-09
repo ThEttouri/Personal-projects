@@ -1,0 +1,36 @@
+Trivia Webpage
+
+Overview:
+
+The Trivia Webpage is an interactive platform designed for users to answer engaging multiple-choice and free-response trivia questions. Utilizing a blend of HTML, CSS, and JavaScript, this webpage offers a visually appealing and responsive interface.
+
+Features:
+
+Multiple-Choice Questions
+
+Part 1: Users can challenge themselves with thoughtfully crafted multiple-choice questions.
+Aesthetically Pleasing Design: Questions are presented with a modern and clean design, enhancing the overall user experience.
+Interactive Buttons
+
+User Engagement: Buttons dynamically change colors upon user interaction, providing instant feedback.
+Visual Feedback: Incorrect answers turn buttons red, while correct answers turn them green, accompanied by status text.
+Free-Response Questions
+
+Part 2: Users can delve into more complex free-response questions.
+Text-Based Interaction: A well-designed input field and confirmation button allow users to input and confirm their answers.
+Responsive Styling
+
+CSS Styling: The webpage boasts an aesthetically pleasing design with carefully selected fonts and color schemes.
+Hover Effects: Interactive sections respond to user hover actions, creating a more engaging experience.
+How to Use:
+
+Open the webpage by launching the index.html file.
+Answer multiple-choice questions by clicking on the corresponding buttons.
+Respond to free-response questions by typing your answer and confirming.
+Enjoy instant feedback on correctness through color changes and accompanying text.
+Customization:
+
+CSS Customization: Feel free to modify the styles.css file to tailor the visual elements according to your preferences.
+Additional Questions: Expand the trivia quiz by adding more questions to further challenge users.
+
+Explore the world of trivia with this interactive and visually appealing webpage. Happy quizzing!
