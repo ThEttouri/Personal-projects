@@ -1,0 +1,22 @@
+=== Credit Card Validator Implementation (Python) ===
+
+This Python program validates credit card numbers using Luhn's Algorithm. Below is an overview of the key components and implementation details:
+
+#### Implementation Details:
+- The program prompts the user for a credit card number, ensuring it is a positive integer.
+- It uses Luhn's Algorithm to validate whether the credit card number is syntactically valid.
+- The program categorizes the valid credit card numbers into American Express, MasterCard, or Visa.
+
+#### Functions:
+1. **`checksum(number)`**
+   - Calculates the checksum of a credit card number based on Luhn's Algorithm.
+   - Returns `True` if the checksum is valid; otherwise, returns `False`.
+
+2. **`print_credit_card_brand(number)`**
+   - Prints the brand of the credit card based on its starting digits.
+
+#### Main Execution:
+- The `main` function prompts the user for a credit card number and then calls the `checksum` function to determine its validity.
+- If the number is valid, it calls `print_credit_card_brand` to print the brand of the credit card; otherwise, it prints "INVALID".
+
+Thank you for reviewing this credit card validator implemented in Python. If you have any questions or concerns, please feel free to ask.
