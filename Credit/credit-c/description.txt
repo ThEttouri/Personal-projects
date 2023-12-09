@@ -1,0 +1,26 @@
+=== Credit Card Validator Implementation (C) ===
+
+This C program, implemented in the file `credit.c`, is designed to validate credit card numbers using Luhn's Algorithm. Below is an overview of the key components and implementation details:
+
+#### Implementation Details:
+- The program prompts the user for a credit card number, ensuring it is entirely numeric and devoid of hyphens.
+- It uses Luhn's Algorithm to validate whether the credit card number is syntactically valid.
+- The program categorizes the valid credit card numbers into American Express, MasterCard, or Visa.
+
+#### Functions:
+1. **`check_validity(long ccn)`**
+   - Determines the validity of a credit card number using Luhn's Algorithm.
+   - Returns `true` if the number is valid; otherwise, returns `false`.
+
+2. **`find_length(long ccn)`**
+   - Finds the length of a credit card number.
+   - Used to identify the type of credit card (American Express, MasterCard, or Visa).
+
+3. **`checksum(long ccn)`**
+   - Calculates the checksum of a credit card number based on Luhn's Algorithm.
+   - Returns `true` if the checksum is valid; otherwise, returns `false`.
+
+4. **`print_credit_card_brand(long ccn)`**
+   - Prints the brand of the credit card based on its starting digits.
+
+Thank you for reviewing this credit card validator implemented in C. If you have any questions or concerns, please feel free to ask.
