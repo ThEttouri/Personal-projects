@@ -1,0 +1,38 @@
+**Scrabble Game in C**
+
+`scrabble.c` embodies a console-based implementation of the classic Scrabble game. Offering an interactive and competitive experience, the code allows two players to input their words, computes the respective scores, and declares a winner based on the total points accumulated. Below is a detailed professional description of the game:
+
+---
+
+**Scrabble Game in C Overview:**
+
+The `scrabble.c` program brings the timeless word game, Scrabble, into a command-line interface. It allows two players to engage in a friendly competition by entering words, calculating scores based on Scrabble letter values, and determining the ultimate victor.
+
+**Key Features:**
+
+1. **Input Handling:**
+   - Utilizing the CS50 library, the program efficiently captures input from both Player 1 and Player 2. Players are prompted to enter their words, fostering an interactive and engaging user experience.
+
+2. **Scoring System:**
+   - The heart of the game lies in its scoring mechanism. Each letter of the alphabet is assigned a specific point value based on the official Scrabble scoring system. The program calculates the total score for each word by iterating through the letters and summing up the corresponding point values.
+
+3. **Case Insensitivity:**
+   - The program gracefully handles case variations in input words. Regardless of whether the letters are entered in uppercase or lowercase, the scoring algorithm accurately computes the scores, ensuring fairness and consistency.
+
+4. **Winner Determination:**
+   - A dedicated function, `find_winner`, compares the scores of Player 1 and Player 2, declaring the winner or identifying a tie. The program elegantly communicates the outcome, announcing which player emerges victorious or if the game ends in a draw.
+
+5. **Modular Design:**
+   - The code exhibits a well-organized and modular structure, with functions encapsulating distinct functionalities. This promotes code readability, maintainability, and scalability.
+
+**Implementation Details:**
+
+- The program employs arrays to store the point values (`POINTS`) and letters (`LETTERS`) associated with the English alphabet. This modular approach enhances the program's flexibility and ease of modification.
+
+- Iterative loops efficiently navigate through the input words and the predefined letter-value arrays, ensuring an optimal and scalable solution.
+
+**Conclusion:**
+
+The Scrabble game implemented in C, encapsulated in `scrabble.c`, provides a delightful emulation of the classic word game. Offering an intuitive interface, robust scoring logic, and a clear determination of the winner, this program is a testament to effective problem-solving and programming craftsmanship.
+
+---
