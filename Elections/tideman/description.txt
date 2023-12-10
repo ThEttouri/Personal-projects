@@ -1,0 +1,57 @@
+==tideman.c==
+
+**Description:**
+
+The `tideman.c` program implements the Tideman voting method, also known as "ranked pairs," a ranked-choice voting system designed to identify the Condorcet winner of an election. In this method, voters rank candidates in order of preference, and the program constructs a graph of candidate matchups to determine the winner.
+
+**Key Components:**
+
+1. **Global Variables:**
+   - The program uses global variables to store candidate information, voter preferences, and the number of voters and candidates. It employs a two-dimensional array `preferences` to represent the number of voters who prefer one candidate over another.
+
+2. **Pair Struct:**
+   - A `pair` struct represents a pair of candidates, storing the winner's and loser's indices.
+
+3. **Functions:**
+   - The program contains several functions:
+      - **vote:** Records voter preferences, updating the ranks array.
+      - **record_preferences:** Updates the global preferences array based on voter preferences.
+      - **add_pairs:** Adds pairs of candidates to the pairs array based on voter preferences.
+      - **sort_pairs:** Sorts the pairs array in decreasing order of strength of victory.
+      - **Cycle:** Checks for cycles in the candidate graph.
+      - **lock_pairs:** Locks pairs into the candidate graph, avoiding cycles.
+      - **print_winner:** Prints the candidate(s) who have no incoming edges, declared as the winner(s).
+
+4. **Main Function:**
+   - The main function initializes candidates, collects voter preferences, and conducts the Tideman election algorithm. It iteratively adds pairs, sorts them, locks them into the graph, and determines the winner.
+
+**Usage:**
+```bash
+./tideman Alice Bob Charlie
+Number of voters: 5
+Rank 1: Alice
+Rank 2: Charlie
+Rank 3: Bob
+
+Rank 1: Alice
+Rank 2: Charlie
+Rank 3: Bob
+
+Rank 1: Bob
+Rank 2: Charlie
+Rank 3: Alice
+
+Rank 1: Bob
+Rank 2: Charlie
+Rank 3: Alice
+
+Rank 1: Charlie
+Rank 2: Alice
+Rank 3: Bob
+
+Charlie
+```
+
+**Conclusion:**
+
+`tideman.c` provides an implementation of the Tideman voting method, a ranked-choice system that ensures the Condorcet winner is declared in an election. The code demonstrates a comprehensive understanding of graph-based voting algorithms, making it a reliable tool for determining fair and representative election outcomes based on voter preferences.
