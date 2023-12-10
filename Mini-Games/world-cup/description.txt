@@ -1,0 +1,54 @@
+
+
+**Description of tournament.py: Simulating FIFA World Cup Tournaments**
+
+The tournament.py script is a Python program designed to simulate FIFA World Cup tournaments based on team ratings. The simulation incorporates historical FIFA ratings to estimate the probability of each team winning the tournament. The code follows a structured approach, utilizing functions for game simulation, round simulation, and overall tournament simulation.
+
+**Key Components:**
+
+1. **simulate_game Function:**
+   - Simulates a single match between two teams.
+   - Determines the winner based on the FIFA ratings of the competing teams.
+   - Implements a probability calculation using the Elo rating system.
+
+2. **simulate_round Function:**
+   - Simulates an entire round of the tournament.
+   - Takes a list of teams as input and simulates matches between each pair of teams.
+   - Returns a list of winning teams that advance to the next round.
+
+3. **simulate_tournament Function:**
+   - Simulates an entire FIFA World Cup tournament.
+   - Continues simulating rounds until only one team remains.
+   - Returns the name of the winning team.
+
+4. **main Function:**
+   - Orchestrates the overall execution of the program.
+   - Reads team data from a CSV file, converting ratings to integers.
+   - Uses command-line arguments to specify the input CSV file.
+   - Conducts a specified number of tournament simulations (N) and keeps track of the number of wins for each team.
+
+5. **Output:**
+   - Prints the estimated probability of each team winning the World Cup based on the simulation results.
+   - Displays the results in descending order of winning probabilities.
+
+**Usage:**
+   - Execute the script with a specified CSV file containing team data as a command-line argument.
+
+**Example:**
+   ```bash
+   $ python tournament.py 2018m.csv
+   ```
+
+**Testing and Experimentation:**
+   - Users can experiment with the value of N to adjust the number of tournament simulations.
+   - The script includes timing functionality to measure the execution time for different numbers of simulations.
+
+**Files:**
+   - tournament.py: The main Python script for simulating FIFA World Cup tournaments.
+   - 2018m.csv: CSV file containing the ratings of 16 men's teams from the 2018 World Cup.
+   - 2019w.csv: CSV file containing the ratings of women's teams from the 2019 World Cup.
+
+**Conclusion:**
+   - The tournament.py script provides a flexible and modular framework for simulating FIFA World Cup tournaments, offering insights into the probabilities of different teams winning based on historical ratings.
+
+---
