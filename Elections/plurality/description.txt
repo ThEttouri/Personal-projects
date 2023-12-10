@@ -1,0 +1,41 @@
+==plurality.c==
+
+**Description:**
+
+The `plurality.c` program implements a simulation of a plurality vote election, a straightforward voting system where each voter selects a single candidate, and the candidate with the most votes is declared the winner. This program is designed to handle a customizable number of candidates, providing a basic yet effective model for election scenarios.
+
+**Key Components:**
+
+1. **Candidate Struct:**
+   - The program defines a `candidate` struct with two attributes: `name` (representing the candidate's name) and `votes` (storing the candidate's vote count).
+
+2. **Global Variables:**
+   - A global array of candidates is created to store information about each candidate. The maximum number of candidates is defined as `MAX`, and the program sets up variables to track the total number of candidates (`candidate_count`) and voters (`voter_count`).
+
+3. **Function Prototypes:**
+   - The program declares function prototypes for `print_winner` and `vote`.
+
+4. **Main Function:**
+   - The `main` function initializes candidate information based on command-line arguments, allowing the user to specify candidate names. It then prompts the user for the number of voters and proceeds to collect votes. After the voting process, the program calls the `print_winner` function to determine and display the election winner(s).
+
+5. **Vote Function:**
+   - The `vote` function takes a candidate name as an argument and updates the corresponding candidate's vote count if the name matches any of the candidates in the election. It returns `true` for a successful ballot and `false` for an invalid vote.
+
+6. **Print Winner Function:**
+   - The `print_winner` function determines the candidate(s) with the maximum number of votes and prints their names. In the case of a tie, where multiple candidates share the maximum vote count, all winning candidates are printed on separate lines.
+
+
+**Usage:**
+```
+$ ./plurality Alice Bob
+Number of voters: 3
+Vote: Alice
+Vote: Bob
+Vote: Alice
+Alice
+```
+
+
+**Conclusion:**
+
+`plurality.c` provides a foundational implementation of a plurality voting system, demonstrating a clear understanding of data structures, control flow, and user input handling. It serves as a robust starting point for further exploration and enhancement of election simulation programs.
