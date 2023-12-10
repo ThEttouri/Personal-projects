@@ -1,0 +1,235 @@
+Project Title: Personal Portfolio Website (Homepage)
+
+
+==index.html==
+
+
+Description:
+
+The index.html file serves as the cornerstone of a meticulously crafted personal portfolio website for Zakaria Ettouri. Leveraging a modern and responsive design, the website showcases Zakaria's skills, experiences, and projects in a visually appealing manner.
+
+
+Key Features:
+
+Navigation: The website boasts a sleek navigation bar with smooth scrolling, ensuring a seamless user experience.
+
+Hero Section: A captivating hero section welcomes visitors with Zakaria's name, a dynamic job title typewriter, and an eye-catching background image.
+
+About Section: The about section provides a comprehensive overview of Zakaria's profile, complete with a skill set progress bar and a captivating image.
+
+Services Section: A well-organized services section outlines Zakaria's expertise in web design, web development, and graphic design.
+
+Portfolio Section: Showcasing a curated selection of projects, the portfolio section employs a lightbox feature for an enhanced viewing experience.
+
+Blog Section: Zakaria's blog section highlights posts with engaging imagery, providing insights into various topics, including travel and web design.
+
+Contact Section: The contact section includes a user-friendly form for easy communication, complemented by contact details and a captivating background image.
+
+
+Technologies Used:
+
+Bootstrap 5.2.3: Ensures a responsive and mobile-friendly layout.
+
+Bootstrap Icons: Enhances the visual appeal with icons for various elements.
+
+glightbox 3.2.0: Implements a lightbox feature for an immersive portfolio viewing experience.
+
+Typed.js 2.0.16: Adds a dynamic typing effect to showcase Zakaria's roles as a developer and freelancer.
+
+
+The index.html file forms the foundation of Zakaria Ettouri's digital presence, combining aesthetics with functionality to create an engaging and informative personal portfolio website.
+
+
+==================================================================================================================================================================================================================================================================================================================================
+
+
+==main.js==
+
+
+Description:
+
+The `main.js` file is a JavaScript script designed to enhance the functionality and interactivity of a website. It serves as the main driver for various dynamic features and user interactions. Here's a breakdown of its key functionalities:
+
+1. **Selector Helper Function:**
+   - The script provides an easy-to-use selector helper function (`select`) for selecting DOM elements. It supports selecting a single element or multiple elements.
+
+2. **Event Listener Function:**
+   - An event listener function (`on`) simplifies the process of attaching event listeners to elements. It can be used to listen for various events on a single or multiple elements.
+
+3. **Scroll Event Listener:**
+   - The script includes a function (`onscroll`) specifically for handling scroll events. This is utilized for implementing dynamic behavior based on the user's scroll actions.
+
+4. **Navbar Links Active State:**
+   - The script dynamically manages the active state of navigation bar links based on the user's scroll position. It ensures that the corresponding section is highlighted when it comes into view.
+
+5. **Smooth Scrolling:**
+   - The `scrollto` function enables smooth scrolling to a specified element, considering the header offset. The header's appearance is adjusted based on whether the page has been scrolled.
+
+6. **Header Scrolled Class Toggle:**
+   - The script toggles a CSS class (`header-scrolled`) on the header element to modify its styling when the user scrolls down the page.
+
+7. **Back-to-Top Button:**
+   - A back-to-top button appears dynamically as the user scrolls down and disappears when near the top. This feature enhances user experience by allowing them to easily return to the top of the page.
+
+8. **Mobile Navigation Toggle:**
+   - The script provides functionality for toggling a mobile navigation menu. It changes the appearance of a toggle button and the mobile navigation menu itself.
+
+9. **Mobile Navigation Dropdowns:**
+   - Dropdowns in the navigation menu are activated on click, specifically tailored for mobile navigation.
+
+10. **Scroll-to Links:**
+    - Links with the class `scrollto` scroll to the corresponding section on the page when clicked. The script also handles adjustments for mobile navigation.
+
+11. **Intro Type Effect:**
+    - The script utilizes the Typed.js library to create a dynamic typing effect for an element with the class `typed`. It displays a sequence of strings with customizable speed and looping options.
+
+12. **Portfolio Lightbox:**
+    - The script initializes a portfolio lightbox using the GLightbox library, allowing users to view portfolio items in an interactive lightbox.
+
+13. **Preloader:**
+    - The script includes a preloader that is removed when the window has fully loaded, ensuring a smooth transition from the loading state to the actual content.
+
+
+In summary, `main.js` significantly contributes to a seamless and engaging user experience on the website by incorporating features such as smooth scrolling, dynamic navigation, animated typing effects, and interactive lightboxes for portfolio items.
+
+
+==================================================================================================================================================================================================================================================================================================================================
+
+
+==styles.css==
+
+
+The `styles.css` file is a comprehensive stylesheet that defines styles for various elements throughout a web page. Below are some key features and styles present in the CSS file:
+
+1. **General Styles:**
+   - Defines background color and text color for the body.
+   - Sets styles for heading tags (`h1` to `h6`).
+   - Defines styles for hyperlinks (`a`), including hover effects.
+
+2. **Box Shadows and Effects:**
+   - Applies box shadows to elements with classes like `.box-shadow`, `.card-blog`, `.work-box`, etc.
+   - Defines a box shadow effect on hover for elements with classes like `.box-shadow-a`, `.button:hover`.
+
+3. **Typography:**
+   - Sets styles for different font sizes using classes like `.display-5`, `.display-6`.
+   - Defines styles for avatar images and background images.
+
+4. **Media Queries:**
+   - Includes media queries to handle responsiveness, especially for background images.
+
+5. **Overlay and Parallax Effects:**
+   - Defines overlay styles (`.overlay-mf`) and parallax effects (`.paralax-mf`).
+   - Implements a scrollable background attachment for large screens.
+
+6. **Sections and Titles:**
+   - Defines styles for different sections with padding (`.sect-4`, `.sect-pt4`, `.sect-mt4`).
+   - Styles for titles (`title-s`, `title-box`, `title-a`, etc.).
+
+7. **Buttons:**
+   - Styles for buttons with different sizes, rounded corners, and hover effects.
+
+8. **Back to Top Button:**
+   - Defines styles for a back-to-top button with animations.
+
+9. **Preloader:**
+   - Implements a simple preloader with a rotating animation.
+
+10. **Navigation Menu:**
+    - Styles for desktop and mobile navigation menus, including dropdowns.
+
+11. **Hero Section:**
+    - Defines styles for a hero section with a background overlay and content.
+
+12. **About, Skills, Services, Portfolio, Contact Sections:**
+    - Specific styles for each section, including service boxes, skill bars, portfolio items, and a contact form.
+
+13. **Blog Styles:**
+    - Styles for blog cards, including titles, descriptions, and meta information.
+
+14. **Portfolio Details:**
+    - Styles for portfolio details, including images and additional information.
+
+15. **Footer Styles:**
+    - Styles for the footer section with a parallax effect.
+
+16. **Form Styles:**
+    - Styles for form elements, including input fields, buttons, and messages.
+
+
+==================================================================================================================================================================================================================================================================================================================================
+
+
+==portfolio-details.html==
+
+Description:
+
+The portfolio-details.html file unveils the intricacies of a standout web design project within Zakaria Ettouri's comprehensive portfolio. Designed with precision and innovation, this webpage offers an immersive experience, allowing viewers to delve into the project's visual elements and detailed information.
+
+
+Key Features:
+
+Header: The fixed-top header ensures easy navigation, providing quick access to different sections of the portfolio.
+
+Hero Section: The hero section sets the stage for the portfolio details, featuring a captivating background image overlayed with essential breadcrumbs for seamless navigation.
+
+Portfolio Details Section: A carefully crafted layout showcases the project through an image slider, offering an in-depth exploration of the design nuances.
+
+Project Information: The sidebar presents vital project information, including category, client details, project date, and a clickable project URL.
+
+Project Description: The narrative unfolds in the portfolio-description section, providing a compelling story behind the project, its challenges, and the creative solutions implemented.
+
+Responsive Design: The webpage is optimized for various devices, ensuring a consistent and visually pleasing experience for users on both desktop and mobile platforms.
+
+Footer: The footer echoes the brand identity, featuring copyright information and acknowledging Zakaria Ettouri as the designer of the portfolio.
+
+
+Technologies Used:
+
+Bootstrap 5.2.3: The responsive framework contributes to the consistent and appealing design across devices.
+
+Bootstrap Icons: Stylish icons enhance the visual elements of the portfolio details, maintaining a cohesive aesthetic.
+
+Swiper: The image slider is powered by Swiper, offering a smooth and interactive way to showcase project visuals.
+
+Main.js: The custom JavaScript file adds functionality to the webpage, contributing to its dynamic features.
+
+
+The portfolio-details.html file encapsulates the essence of a successful web design project, combining functionality with an aesthetically pleasing design to present a captivating narrative within Zakaria Ettouri's broader portfolio.
+
+
+==================================================================================================================================================================================================================================================================================================================================
+
+
+==Blog Single Pages (blog-single1.html, blog-single2.html, blog-single3.html)==
+
+**Description:**
+
+The trio of blog-single pages (blog-single1.html, blog-single2.html, and blog-single3.html) collectively represents a harmonious blend of aesthetic design and compelling content within Zakaria Ettouri's digital portfolio. Built on a foundation of consistent and responsive coding practices, each page offers an immersive exploration of individual blog posts.
+
+**Key Features:**
+
+1. **Header Navigation:** The fixed-top header ensures seamless navigation, allowing users to effortlessly explore various sections of Zakaria's portfolio.
+
+2. **Hero Section:** A visually striking hero section welcomes visitors with an overlay background and breadcrumb navigation, setting the tone for an engaging blog post experience.
+
+3. **Blog Single Section:** The central focus of each page, this section presents a meticulously crafted blog post layout, featuring a large post image, meta information, and thoughtfully organized article content.
+
+4. **Article Content:** Thoughtfully divided into paragraphs, the article content provides a comprehensive view of the blog's narrative. Placeholder text offers a preview of the writing style and encourages further exploration.
+
+5. **Comments Section:** Engaging readers is facilitated through a comments section, fostering community interaction and enabling visitors to share their perspectives on the blog content.
+
+6. **Comment Form:** A user-friendly comment form invites participation, allowing readers to contribute their thoughts and feedback easily.
+
+7. **Sidebar Widgets:** Each page incorporates a sidebar with useful widgets such as a search bar, recent post list, archives, and tags, enhancing the overall user experience.
+
+**Technologies Used:**
+
+1. **Bootstrap 5.2.3:** The utilization of Bootstrap ensures a responsive and visually consistent layout across diverse devices.
+
+2. **Bootstrap Icons:** Stylish icons contribute to the aesthetic appeal, enhancing the visual elements of the blog pages.
+
+3. **Main.js:** The custom JavaScript file adds functionality to the pages, elevating the overall dynamic features and user interactivity.
+
+**Conclusion:**
+
+Collectively, the blog-single pages embody Zakaria Ettouri's commitment to presenting captivating content within an appealing design framework. Through thoughtful coding and user-focused design, these pages contribute significantly to the professionalism and cohesiveness of Zakaria's broader web portfolio.
