@@ -1,0 +1,56 @@
+==runoff.c==
+
+**Description:**
+
+The `runoff.c` program implements a ranked-choice voting system known as an "instant runoff" election. In this system, voters can rank candidates in order of preference, and candidates with the fewest votes are successively eliminated until a candidate achieves a majority.
+
+**Key Components:**
+
+1. **Global Variables:**
+   - The program defines global variables to store candidate information, voter preferences, and the number of voters and candidates. It uses a two-dimensional array `preferences` to represent the ranked preferences of each voter.
+
+2. **Candidate Struct:**
+   - A `candidate` struct holds essential information about each candidate, including their name, vote count, and an elimination status flag.
+
+3. **Functions:**
+   - The program contains several functions:
+      - **vote:** Records voter preferences, updating the preferences array.
+      - **tabulate:** Calculates and updates the vote count for each non-eliminated candidate based on voter preferences.
+      - **print_winner:** Determines and prints the winner if a candidate has more than half of the total votes.
+      - **find_min:** Finds and returns the minimum number of votes among the remaining candidates.
+      - **is_tie:** Checks if the election is tied between all remaining candidates.
+      - **eliminate:** Eliminates the candidate(s) with the minimum number of votes.
+
+4. **Main Function:**
+   - The main function initializes candidates and collects voter preferences. It then iteratively conducts runoffs until a winner is determined.
+
+**Usage:**
+```bash
+./runoff Alice Bob Charlie
+Number of voters: 5
+Rank 1: Alice
+Rank 2: Charlie
+Rank 3: Bob
+
+Rank 1: Alice
+Rank 2: Charlie
+Rank 3: Bob
+
+Rank 1: Bob
+Rank 2: Charlie
+Rank 3: Alice
+
+Rank 1: Bob
+Rank 2: Charlie
+Rank 3: Alice
+
+Rank 1: Charlie
+Rank 2: Alice
+Rank 3: Bob
+
+Alice
+```
+
+**Conclusion:**
+
+`runoff.c` provides an implementation of an instant runoff election system, showcasing an understanding of voting algorithms and preference-based candidate elimination. The code offers a flexible and dynamic approach to handling runoff elections, making it a robust tool for simulating fair and representative voting outcomes.
